@@ -1,0 +1,27 @@
+body{
+    background-image: linear-gradient(90deg, transparent 50%, #89c2d9 50%);
+    background-size: 22px 22px;
+    background-color:$CianFuerte;
+    min-height: 100%;
+}
+.grid-container{
+    text-align: center;
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    ". nav nav ."
+    ". main main ."
+    ". footer footer ." ;
+    grid-template-rows: 7.1rem  auto auto 1fr;
+    grid-template-columns: 2rem auto auto 2rem;
+}
+@media (min-width: 768px) {
+    .grid-container{
+        grid-template-columns: 4rem auto auto 4rem;
+    }
+}
+@media (min-width: 1024px){
+    .grid-container{
+        grid-template-columns: 5rem auto auto 5rem;
+}
+}

@@ -1,0 +1,68 @@
+.sectionF{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    & h1{
+        margin-bottom: 3rem;
+        @include titulo;
+    }
+    &__sucursal{
+        @include flex-colum (column,center);
+        width: 100%;
+        border: 3px solid white;
+        border-radius: 4px;
+        background-color:$CianOscuro;
+        margin-bottom: 3rem;
+        &-titulo{
+            @include flex-colum (column,center);
+            margin-top: 2rem;
+        }
+        &-map{
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        & h2{
+            @include titulo;
+            font-size: 2rem;
+        }
+        & p{
+            font-family: 'Kalam', cursive;
+            font-size: 1.25rem; 
+        }
+    }
+}
+@media (min-width: 768px){
+    .sectionF{
+        & h1{
+            font-size: 4rem;
+        }
+        &__sucursal{
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            justify-content: space-around;
+            &-titulo{
+                flex-direction: column;
+                justify-content: center;
+                width: 40%;
+                & h2 {
+                    font-size: 2.5rem;
+                }
+                & p {
+                    font-size: 1.5rem;
+                }
+            }
+            &-map{
+                width: 60%;
+                & iframe{
+                    width: 100%;
+                    height: 30rem;
+                }
+            }
+        }
+    }
+}
+
+

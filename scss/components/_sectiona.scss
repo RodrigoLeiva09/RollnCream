@@ -1,0 +1,68 @@
+.sectionA{
+    background-color: $RosaDos;
+    @include flex-colum (column,space-around);
+    &__img{
+        @include marco-img;
+        width: 15rem;
+        margin-top: 3.125rem;
+        display: none;
+    }
+    &__texto{
+        @include flex-colum (column,center);
+        & img{
+            width: 16rem;
+            margin:1rem 0 1rem 0 ;}
+        & p {
+            font-family: 'Kalam', cursive;
+            font-size: 1rem;
+            color: black;
+            text-align: center;
+            padding: 5px;
+            margin-bottom: 0.625rem;
+        }
+    }
+}
+.btn-reserva{
+    font-size: 0.8rem;
+    min-width: 5rem;
+    height: 2rem;
+    color: black;
+    padding: 0.4rem 0.625rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    outline: none;
+    border: 2px solid $RosaTres;
+    background: $RosaUno;
+    text-decoration: none;
+    font-family: 'Kalam', cursive;
+    text-align: center;
+    border-radius: 5px;
+    &:hover {
+        background: #fff;
+        color: #ff0a78}
+    
+}
+@media (min-width: 768px){
+    .sectionA{
+        flex-direction: row;
+        &__img{
+            display: block;
+            width: 20rem;
+        }
+    }
+}
+@media (min-width: 1024px) {
+    .sectionA__img{
+        width: 25rem;
+    }
+    .sectionA__texto{
+        & img{
+            width: 20rem;
+        }
+        & p{
+            font-size: 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.footer{
+    grid-area:footer ;
+    background-color: $RosaDos;
+    & img{
+        width: 100%;
+        margin-top: 3rem;
+    }
+    &__redes{
+        @include flex-center;
+        flex-direction: column;
+        padding-top: 1rem;
+        & h4{
+            font-family: 'Lobster', cursive;
+            font-size: 1.5rem;
+            color: white;
+            text-shadow: 0 0 5px #ff0a78, 0 0 15px #ff0a78, 0 0 20px #ff0a78;
+            margin: 0.781rem;
+        }
+        &-iconos{
+            flex-direction: row;
+            & img{
+                margin-bottom: 0.781rem;
+                width: 3.7rem;
+            }
+        }
+        & p{
+            font-family: 'Kalam', cursive;
+            font-size: 0.7rem;
+        }
+    }
+}
+@media (min-width: 768px){
+    .footer__redes-iconos img{
+        width: 7rem;
+}
+}
+@media (min-width: 1024px) {
+    .footer__redes h4 {
+        font-size: 2.5rem;
+    }
+}

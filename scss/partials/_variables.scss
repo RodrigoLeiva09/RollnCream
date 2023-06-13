@@ -1,0 +1,30 @@
+$CianFuerte: #88e8f2;
+$CianOscuro: #89c2d9;
+$RosaUno: #D96690;
+$RosaDos: #f28db2;
+$RosaTres: #f2C9E0;
+$Texto: white;
+
+@mixin flex-center{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-colum ($flex,$justify){
+    display:flex;
+    align-items: center;
+    flex-direction: $flex;
+    justify-content:$justify;
+}
+@mixin marco-img{
+    border: 3px solid white;
+    box-shadow: 19px 12px 5px 0px rgba(224,12,202,0.53);
+    -webkit-box-shadow: 19px 12px 5px 0px rgba(224,12,202,0.53);
+    -moz-box-shadow: 19px 12px 5px 0px rgba(224,12,202,0.53);
+}
+@mixin titulo{
+    font-family: 'Lobster', cursive;
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 0 0 5px #ff0a78, 0 0 15px #ff0a78, 0 0 20px #ff0a78;
+}
