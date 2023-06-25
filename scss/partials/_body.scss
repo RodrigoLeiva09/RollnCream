@@ -25,3 +25,8 @@ body{
         grid-template-columns: 5rem auto auto 5rem;
 }
 }
+@media (min-width: 1200px){
+    .grid-container{
+        grid-template-columns: 8rem auto auto 8rem;
+}
+}
